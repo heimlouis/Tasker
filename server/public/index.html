@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tasker</title>
+    <script src="vendors/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script src="scripts/client.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="views/styles.css">
+  </head>
+  <body>
+    <!-- ***** add images here ****** <img src="images/icon.png" /> -->
+    <h1>Tasker</h1>
+    <div id="projectDiv">
+        <h2>Projects</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Project Name</th>
+            </tr>
+            </thead>
+            <tbody id="projectTBody">
+            </tbody>
+        </table>
+        <button type="button" id="addProjectButton">Add Project</button>
+    </div>  
+    <div id="taskDiv">
+        <h2>Tasks</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Task Name</th>
+                <th>Complete</th>
+            </tr>
+            </thead>
+            <tbody id="taskTBody">
+                <td>some task</td>
+                <td><input type="checkbox" name="test"></td>
+            </tbody>
+        </table>
+        <button type="button" id="addTaskButton">Add Task</button>
+    </div>  
+    <h3>Notes:</h3>
+        <p id="taskNotes"></p>
+  </body>
+</html>
