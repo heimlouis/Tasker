@@ -1,0 +1,42 @@
+html body{
+    background-color: #97b9f763;
+    font-family: Arial;
+   }
+   
+   h1{
+   color: #180909;
+   margin-left: 3%;
+   }
+   h2{
+   color: #07a8a0;
+   margin-left: 2%;
+   }
+   h3{
+   color: #07a8a0;
+   margin-left: 2%;
+   }
+   h4{
+   color: #07a8a0;
+   margin-left: 2%;
+   }
+   
+   table {
+    border-collapse: collapse;
+    width: 100%;
+   }
+   
+   th, td {
+    color: #180909b6;
+    text-align: left;
+    padding: 8px;
+   }
+   
+   tr:nth-child(even){
+    background-color: #edeefd57;
+   }
+   
+   th {
+    background-color: rgba(44, 56, 82, 0.479);
+    color: white;
+    font-size: 18px;
+   }

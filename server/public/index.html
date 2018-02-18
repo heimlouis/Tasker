@@ -2,44 +2,53 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tasker</title>
+    <title>mul·ti·task·er</title>
     <script src="vendors/jquery-3.3.1.min.js" charset="utf-8"></script>
     <script src="scripts/client.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="views/styles.css">
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
     <!-- ***** add images here ****** <img src="images/icon.png" /> -->
-    <h1>Tasker</h1>
-    <div id="projectDiv">
-        <h2>Projects</h2>
-        <table>
-            <thead>
-            <tr>
-                <th>Project Name</th>
-            </tr>
-            </thead>
-            <tbody id="projectTBody">
-            </tbody>
-        </table>
-        <button type="button" id="addProjectButton">Add Project</button>
-    </div>  
+    <h1>mul·ti·task·er</h1>
+    <div id="createProjectDiv">
+        <input type="text" id="addProjectInput" placeholder="Project to add">
+        <button type="button" name="submit" id="createProjectButton">Submit</button>
+    </div>
+    <br>
+    <div id="projectButtons">
+    </div>
+    <div>
+        <HR style="opacity:0.20" COLOR="grey" size="2"> 
+        <h2>Project</h2>
+        <h4 id="displaySelectedProject">display selected project here</h4>
     <div id="taskDiv">
+        <HR style="opacity:0.20" COLOR="grey" size="2"> 
         <h2>Tasks</h2>
+        <div id="createTaskDiv">
+            <input type="text" id="addTaskInput" placeholder="add task desctiption" style="width: 400px;">
+            <button type="button" name="submit" id="createTaskButton">Submit</button>
+        </div>
         <table>
             <thead>
-            <tr>
-                <th>Task Name</th>
-                <th>Complete</th>
-            </tr>
+                <tr>
+                    <br>
+                    <th width="6%" align="left">Completed</th>
+                    <th align="left">Task Description</th>
+                    <th></th>
+                </tr>
+                    <tbody id="taskTBody"></tbody>
+                        <!-- <tr style="text-align:center;">
+                            <td><input type="checkbox" name="test" class="taskCheckBox"></td><td align="left">some project task</td><td><button align="left" type="button" name="deleteTask" id="deleteTaskButton">Delete</button></td>
+                        </tr> -->
             </thead>
-            <tbody id="taskTBody">
-                <td>some task</td>
-                <td><input type="checkbox" name="test"></td>
-            </tbody>
         </table>
-        <button type="button" id="addTaskButton">Add Task</button>
-    </div>  
-    <h3>Notes:</h3>
-        <p id="taskNotes"></p>
+    </div> 
+    <br>
+    <HR style="opacity:0.20" COLOR="grey" size="2"> 
+    <h4>Notes:</h4>
+        <div id="taskDetailsNotes">
+            <textarea rows="5" cols="75" placeholder="Enter task details here"></textarea><br>
+            <button type="button" name="save" id="saveTaskDetailsButton">Save</button>
+        </div>
   </body>
 </html>
