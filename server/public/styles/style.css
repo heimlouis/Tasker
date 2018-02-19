@@ -1,5 +1,5 @@
     html body{
-    background-color: #d1e0fc80;
+    background-color: #f0fafa;
     font-family: Arial;
     }
 
@@ -18,7 +18,7 @@
     }
     h4{
     color: #07a8a0;
-    margin-left: 2%;
+    margin-left: 8%;
     }
 
     table {
@@ -28,17 +28,16 @@
 
     th, td {
     color: #07a8a0;
-    text-align: left;
     padding: 8px;
     }
 
     tr:nth-child(even){
-    background-color: #fbfbfdc7;
+    background-color: #e7fcfb;
     }
 
     th {
     background-color: #07a8a0;
-    color: #fbfbfdc7;
+    color: #d6fdfb;
     font-size: 20px;
     }
 
